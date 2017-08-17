@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import Dispatcher from 'flux';
 
 const CountDown = ({count, tick, reset}) => {
   if(count){
