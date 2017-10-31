@@ -7,6 +7,7 @@ export const addColor = (title, color) =>
 		id: v4(),
 		title,
 		color, 
+		rating: 0,
 		timestamp: new Date().toString()
 	})
 

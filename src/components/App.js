@@ -1,10 +1,11 @@
-import '../stylesheets/APP.scss'
+import '../stylesheets/APP.css'
 import React from 'react'
-import AddColorForm from './AddColorForm'
+import { Menu, NewColor, Colors } from './containers'
 
 const App = ({store}) =>
 	<div className='app'>
-		<AddColorForm store={store} />
+		<NewColor store={store} /> 
+		<Colors store={store} />
 	</div>
 
-export default App
+export default App 
