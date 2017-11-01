@@ -27,8 +27,352 @@ export const PageWrap = () =>
             <article className="post_item post_item_single page">
                 <section className="post_content">
                     <NextEvent />
+                    <Welcome />
+                    <Mission />
+                    <Info />
+                    <Upcomming />
+                    <GridWrapper />
+                    <div className="clear"></div>
+                    <CallTo />
                 </section>
             </article>
+        </div>
+    </div>
+
+export const CallTo = () =>
+    <div className="hp1_call_to_action_section">
+        <div className="sc_call_to_action sc_call_to_action_style_1 sc_call_to_action_align_left sc_call_to_action_color_style_1 width_100_per">
+            <div className="content_wrap">
+                <div className="columns_wrap">
+                    <div className="sc_call_to_action_featured column-1_2">
+                        <img alt="" src="http://placehold.it/520x320" />
+                    </div><div className="sc_call_to_action_info column-1_2">
+                        <h6 className="sc_call_to_action_subtitle sc_item_subtitle">Lyrics, Chords & Translations</h6>
+                        <h2 className="sc_call_to_action_title sc_item_title">Worship Team Resources</h2>
+                        <div className="sc_call_to_action_descr sc_item_descr">We’re passionate about Jesus and leading others to worship Him! We hope these resources help equip you and your team as you lead worship.</div>
+                        <div className="sc_call_to_action_buttons sc_item_buttons">
+                            <div className="sc_call_to_action_button sc_item_button">
+                                <a href="#" className="sc_button sc_button_square sc_button_style_filled sc_button_color_style_2 sc_button_size_large">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+export const GridWrapper = () =>
+    <article className="myportfolio-container minimal-light" id="esg-grid-5-1-wrap">
+        <div id="esg-grid-5-1" className="esg-grid">
+            <ul>
+                <li className="filterall filter-home-1 eg-washington-wrapper">
+                    <div className="esg-media-cover-wrapper">
+                        <div className="esg-entry-media">
+                            <img src="http://placehold.it/2400x1600" alt="" />
+                        </div>
+                        <div className="esg-entry-cover esg-fade" data-delay="0">
+                            <div className="esg-overlay esg-fade eg-washington-container" data-delay="0"></div>
+                            <div className="esg-center eg-washington-element-0-a esg-falldown" data-delay="0.1">
+                                <a className="eg-washington-element-0 esgbox" href="http://placehold.it/2400x1600">
+                                    <i className="eg-icon-search"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-1-a esg-falldown" data-delay="0.2">
+                                <a className="eg-washington-element-1" href="post-single.html" target="_self">
+                                    <i className="eg-icon-link"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-8 esg-none esg-clear"></div>
+                            <div className="esg-center eg-washington-element-3 esg-flipup" data-delay="0.1">Truth Does Not Hurt</div>
+                            <div className="esg-center eg-washington-element-9 esg-none esg-clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li className="filterall filter-home-1 eg-washington-wrapper">
+                    <div className="esg-media-cover-wrapper">
+                        <div className="esg-entry-media">
+                            <img src="http://placehold.it/2400x1600" alt="" />
+                        </div>
+                        <div className="esg-entry-cover esg-fade" data-delay="0">
+                            <div className="esg-overlay esg-fade eg-washington-container" data-delay="0"></div>
+                            <div className="esg-center eg-washington-element-0-a esg-falldown" data-delay="0.1">
+                                <a className="eg-washington-element-0 esgbox" href="http://placehold.it/2400x1600" >
+                                    <i className="eg-icon-search"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-1-a esg-falldown" data-delay="0.2">
+                                <a className="eg-washington-element-1" href="post-single.html" target="_self">
+                                    <i className="eg-icon-link"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-8 esg-none esg-clear"></div>
+                            <div className="esg-center eg-washington-element-3 esg-flipup" data-delay="0.1">We Give Hope</div>
+                            <div className="esg-center eg-washington-element-9 esg-none esg-clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li className="filterall filter-home-1 eg-washington-wrapper">
+                    <div className="esg-media-cover-wrapper">
+                        <div className="esg-entry-media">
+                            <img src="http://placehold.it/2400x1600" alt="" />
+                        </div>
+                        <div className="esg-entry-cover esg-fade" data-delay="0">
+                            <div className="esg-overlay esg-fade eg-washington-container" data-delay="0"></div>
+                            <div className="esg-center eg-washington-element-0-a esg-falldown" data-delay="0.1">
+                                <a className="eg-washington-element-0 esgbox" href="http://placehold.it/2400x1600">
+                                    <i className="eg-icon-search"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-1-a esg-falldown" data-delay="0.2">
+                                <a className="eg-washington-element-1" href="post-single.html" target="_self">
+                                    <i className="eg-icon-link"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-8 esg-none esg-clear"></div>
+                            <div className="esg-center eg-post-2234 eg-washington-element-3 esg-flipup" data-delay="0.1">Through the Never</div>
+                            <div className="esg-center eg-washington-element-9 esg-none esg-clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li className="filterall filter-home-1 eg-washington-wrapper">
+                    <div className="esg-media-cover-wrapper">
+                        <div className="esg-entry-media">
+                            <img src="http://placehold.it/2400x1600" alt="" />
+                        </div>
+                        <div className="esg-entry-cover esg-fade" data-delay="0">
+                            <div className="esg-overlay esg-fade eg-washington-container" data-delay="0"></div>
+                            <div className="esg-center eg-washington-element-0-a esg-falldown" data-delay="0.1">
+                                <a className="eg-washington-element-0 esgbox" href="http://placehold.it/2400x1600">
+                                    <i className="eg-icon-search"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-1-a esg-falldown" data-delay="0.2">
+                                <a className="eg-washington-element-1" href="post-single.html" target="_self">
+                                    <i className="eg-icon-link"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-8 esg-none esg-clear"></div>
+                            <div className="esg-center eg-washington-element-3 esg-flipup" data-delay="0.1">Forgiveness & Acceptance</div>
+                            <div className="esg-center eg-washington-element-9 esg-none esg-clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li className="filterall filter-home-1 eg-washington-wrapper">
+                    <div className="esg-media-cover-wrapper">
+                        <div className="esg-entry-media">
+                            <img src="http://placehold.it/2400x1600" alt="" />
+                        </div>
+                        <div className="esg-entry-cover esg-fade" data-delay="0">
+                            <div className="esg-overlay esg-fade eg-washington-container" data-delay="0"></div>
+                            <div className="esg-center eg-washington-element-0-a esg-falldown" data-delay="0.1">
+                                <a className="eg-washington-element-0 esgbox" href="http://placehold.it/2400x1600">
+                                    <i className="eg-icon-search"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-1-a esg-falldown" data-delay="0.2">
+                                <a className="eg-washington-element-1" href="post-single.html" target="_self">
+                                    <i className="eg-icon-link"></i>
+                                </a>
+                            </div>
+                            <div className="esg-center eg-washington-element-8 esg-none esg-clear"></div>
+                            <div className="esg-center eg-washington-element-3 esg-flipup" data-delay="0.1">The Answer Is God</div>
+                            <div className="esg-center eg-washington-element-9 esg-none esg-clear"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>    
+
+export const Upcomming = () =>
+    <div className="hp1_upcoming_events_section">
+        <div className="content_wrap">
+            <div className="columns_wrap sc_columns columns_nofluid sc_columns_count_2">
+                <div className="column-1_2 sc_column_item sc_column_item_1 odd first">
+                    <div className="sc_section">
+                        <div className="sc_section_inner">
+                            <h6 className="sc_section_subtitle sc_item_subtitle">Worship</h6>
+                            <h2 className="sc_section_title sc_item_title margin_bottom_1_2em_imp">The sound of our worship</h2>
+                            <div id="myplayer"></div>
+                        </div>
+                    </div>
+                </div><div className="column-1_2 sc_column_item sc_column_item_2 even">
+                    <div className="sc_section">
+                        <div className="sc_section_inner">
+                            <h6 className="sc_section_subtitle sc_item_subtitle">Upcoming Events</h6>
+                            <h2 className="sc_section_title sc_item_title margin_bottom_1_2em_imp">Conferences & Events</h2>
+                            <div className="sc_events_wrap">
+                                <div className="sc_events sc_events_style_events-2 sc_slider_nopagination sc_slider_nocontrols width_100_per" data-interval="7691">
+                                    <div className="sc_events_item sc_events_item_1 odd first">
+                                        <span className="sc_events_item_date">
+                                            <span className="sc_events_item_month">Apr</span>
+                                            <span className="sc_events_item_day">24</span>
+                                        </span>
+                                        <h6 className="sc_events_item_title">
+                                            <a href="event-single.html">Church Leaders meeting</a>
+                                        </h6>
+                                        <span className="sc_events_item_time">1:00 pm - 7:00 pm</span>
+                                        <span className="sc_events_item_details">
+                                            <a href="event-single.html">Details</a>
+                                        </span>
+                                    </div>
+                                    <div className="sc_events_item sc_events_item_2 even">
+                                        <span className="sc_events_item_date">
+                                            <span className="sc_events_item_month">Apr</span>
+                                            <span className="sc_events_item_day">09</span>
+                                        </span>
+                                        <h6 className="sc_events_item_title">
+                                            <a href="event-single.html">Prayer Day</a>
+                                        </h6>
+                                        <span className="sc_events_item_time">6:00 pm - 8:00 pm</span>
+                                        <span className="sc_events_item_details">
+                                            <a href="event-single.html">Details</a>
+                                        </span>
+                                    </div>
+                                    <div className="sc_events_item sc_events_item_3 odd">
+                                        <span className="sc_events_item_date">
+                                            <span className="sc_events_item_month">Mar</span>
+                                            <span className="sc_events_item_day">02</span>
+                                        </span>
+                                        <h6 className="sc_events_item_title">
+                                            <a href="event-single.html">Monthly Band Tryouts</a>
+                                        </h6>
+                                        <span className="sc_events_item_time">3:00 pm - 7:00 pm</span>
+                                        <span className="sc_events_item_details">
+                                            <a href="event-single.html">Details</a>
+                                        </span>
+                                    </div>
+                                    <div className="sc_events_item sc_events_item_4 even">
+                                        <span className="sc_events_item_date">
+                                            <span className="sc_events_item_month">Jan</span>
+                                            <span className="sc_events_item_day">31</span>
+                                        </span>
+                                        <h6 className="sc_events_item_title">
+                                            <a href="event-single.html">WOW Conference</a>
+                                        </h6>
+                                        <span className="sc_events_item_time">10:00 am - 2:00 pm</span>
+                                        <span className="sc_events_item_details">
+                                            <a href="event-single.html">Details</a>
+                                        </span>
+                                    </div>
+                                    <div className="sc_events_item sc_events_item_5 odd">
+                                        <span className="sc_events_item_date">
+                                            <span className="sc_events_item_month">Jun</span>
+                                            <span className="sc_events_item_day">24</span>
+                                        </span>
+                                        <h6 className="sc_events_item_title">
+                                            <a href="event-single.html">Seniors Bible Study</a>
+                                        </h6>
+                                        <span className="sc_events_item_time">4:00 pm - 6:00 pm</span>
+                                        <span className="sc_events_item_details">
+                                            <a href="event-single.html">Details</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+export const Info = () =>
+
+    <div className="hp1_info_section">
+        <div className="sc_section">
+            <div className="sc_section_inner">
+                <h1 className="sc_title sc_title_regular sc_align_center">Get Connected. What&#8217;s Your Next Step?<br />
+                    Follow. Connect. Go.</h1>
+                <div className="custom_heading_1">Following Jesus as disciples and connecting with others as part of a spiritual family</div>
+                <div className="sc_section aligncenter">
+                    <div className="sc_section_inner">
+                        <a href="events.html" className="sc_button sc_button_square sc_button_style_filled sc_button_color_style_3 sc_button_size_large width_120">small groups &amp;<br />
+                        BIBLE STUDIES</a>
+                        <a href="donate-now.html" className="sc_button sc_button_square sc_button_style_filled sc_button_color_style_3 sc_button_size_large width_120">MISSIONS<br />
+                        &amp; donation</a>
+                        <a href="post-formats.html" className="sc_button sc_button_square sc_button_style_filled sc_button_color_style_3 sc_button_size_large width_120">Musical<br />
+                        Worship Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+export const Mission = () =>
+
+    <div className="hp1_mission_section">
+        <div className="content_wrap">
+            <div className="columns_wrap sc_columns columns_fluid no_margins sc_columns_count_2">
+                <div className="column-1_2 sc_column_item sc_column_item_1 odd first">
+                    <h2 className="sc_title sc_title_regular sc_align_right">Our church mission is to ignite a passion to follow Jesus.</h2>
+                </div><div className="column-1_2 sc_column_item sc_column_item_2 even">
+                    <div className="sc_section">
+                        <div className="sc_section_inner">
+                            <p className="tpl_light">
+                              “The church is the body of Christ on earth, empowered by the Holy Spirit to continue the task of reaching the lost and discipling the saved, helping them become fully devoted followers of Christ.”
+                            </p>
+                            <p className="tpl_light">Ephesians 4:1-16</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+export const Welcome = () =>
+    <div className="hp1_welcome_section">
+        <div className="content_wrap">
+            <div className="columns_wrap">
+              <div className="column-1_2 sc_column_item sc_column_item_1 odd first">
+                <figure className="sc_image sc_image_shape_square">
+                    <a href="service-single.html">
+                        <img src="http://placehold.it/520x660" alt="" />
+                    </a>
+                </figure>
+              </div>
+              <div className="column-1_2 sc_column_item sc_column_item_2 even">
+                    <div className="sc_services_wrap">
+                        <div className="sc_services sc_services_style_services-5 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols width_100_per" data-interval="5040" data-slides-min-width="250">
+                            <h6 className="sc_services_subtitle sc_item_subtitle">Welcome</h6>
+                            <h2 className="sc_services_title sc_item_title">Loving God, Loving Others and Serving the World</h2>
+                            <div className="sc_services_descr sc_item_descr">We’d love to meet you! Come check us out this SUNDAY where you can meet us and see if New Life Church might be a good fit for you. Our heart and soul is to introduce and connect people with the living and powerful God.</div>
+                            <div className="sc_services_item sc_services_item_1 odd first">
+                                <span className="sc_icon icon-house306"></span>
+                                <div className="sc_services_item_content">
+                                    <h4 className="sc_services_item_title">
+                                        <a href="service-single.html">Follow with us</a>
+                                    </h4>
+                                    <div className="sc_services_item_description">
+                                        <p>We would love to see you and your family &amp; friends this weekend in our church at 10 am.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="sc_services_item sc_services_item_2 even">
+                                <span className="sc_icon icon-open-book6"></span>
+                                <div className="sc_services_item_content">
+                                    <h4 className="sc_services_item_title">
+                                        <a href="service-single.html">What We Believe</a></h4>
+                                    <div className="sc_services_item_description">
+                                        <p>We believe that the Bible is God’s Word. It is accurate, authoritative and applicable to our everyday lives.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="sc_services_item sc_services_item_3 odd">
+                                <span className="sc_icon icon-avatar110"></span>
+                                <div className="sc_services_item_content">
+                                    <h4 className="sc_services_item_title">
+                                        <a href="service-single.html">New Here?</a>
+                                    </h4>
+                                    <div className="sc_services_item_description">
+                                        <p>Tell us about yourself to begin your journey with connecting to our community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
