@@ -4,10 +4,15 @@ import { MainMenu, AboutMenu } from './menus'
 //import './stylesheets/pages.scss'
 
 const PageTemplate = ({children}) =>
-    <div className="page">
-        <MainMenu />
-        {children}
+    <div className="body_wrap">
+        <div className="page_wrap">
+            <div className="top_panel_fixed_wrap"></div>
+            <MainMenu />
+            {children}
+        </div>
     </div>
+
+
 
 export const Home = () =>
     <div className="home">
