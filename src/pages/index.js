@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import { MainMenu, AboutMenu } from './menus'
+
+import RevSlider, { Slide, Caption } from 'react-rev-slider';
 //import './stylesheets/pages.scss'
 
 const PageTemplate = ({children}) =>
@@ -16,7 +18,7 @@ const PageTemplate = ({children}) =>
 
 export const Home = () =>
     <PageTemplate>
-        <Slider />
+        <SliderRev />
         <PageWrap />
     </PageTemplate>
 
@@ -436,6 +438,66 @@ export const NextEvent = () =>
             <div className="clearfix"></div>
         </div>
     </div>
+
+
+export class SliderRev extends Component { 
+
+      
+    render () {
+
+        return (
+        <RevSlider >
+            <Slide
+                src="https://i.ytimg.com/vi/dFnvYtPePRA/maxresdefault.jpg"
+                alt="slidebg1"
+                data-bgfit="cover"
+                data-bgposition="left top"
+                data-bgrepeat="no-repeat"
+                slideProperties={{
+                    'data-transition': "fade",
+                    'data-slotamount': "7",
+                    'data-masterspeed': "1500"
+                }}
+            >   
+                <Caption
+                    class="tp-caption skewfromrightshort fadeout"
+                    data-x="85"
+                    data-y="224"
+                    data-speed="500"
+                    data-start="1200"
+                    data-easing="Power4.easeOut"
+                >
+                    This is a caption
+                </Caption>
+            </Slide>
+            <Slide
+                src="https://i.ytimg.com/vi/0xe4H666drk/maxresdefault.jpg"
+                alt="slidebg1"
+                data-bgfit="cover"
+                data-bgposition="left top"
+                data-bgrepeat="no-repeat"
+                slideProperties={{
+                    'data-transition': "fade",
+                    'data-slotamount': "7",
+                    'data-masterspeed': "1500"
+                }}
+            >   
+                <Caption
+                    class="tp-caption skewfromrightshort fadeout"
+                    data-x="85"
+                    data-y="224"
+                    data-speed="500"
+                    data-start="1200"
+                    data-easing="Power4.easeOut"
+                >
+                    This is a caption
+                </Caption>
+            </Slide>
+        </RevSlider>
+        );
+    }
+}
+
 
 export class Slider extends Component {
 
