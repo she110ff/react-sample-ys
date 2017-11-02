@@ -73,18 +73,9 @@ export const MainMenu = () =>
                         <nav className="menu_main_nav_area">
                             <ul id="menu_main" className="menu_main_nav">
                                 <li className="menu-item menu-item-has-children">
-                                    <a href="#">Home</a>
-                                    <ul className="sub-menu">
-                                        <li className="menu-item">
-                                            <a href="index.html">Home 1</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="homepage-2.html">Home 2</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="homepage-3.html">Home 3</a>
-                                        </li>
-                                    </ul>
+                                    <NavLink to="/">
+                                        Home
+                                    </NavLink>
                                 </li>
                                 <li className="menu-item menu-item-has-children">
                                     <a href="#">Pages</a>
@@ -129,7 +120,9 @@ export const MainMenu = () =>
                                     </ul>
                                 </li>
                                 <li className="menu-item">
-                                    <a href="events.html">Events</a>
+                                    <NavLink to="/events">
+                                        Events
+                                    </NavLink>
                                 </li>
                                 <li className="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
                                     <a href="#">Sermons</a>

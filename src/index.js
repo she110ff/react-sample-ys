@@ -6,6 +6,8 @@ import registerServiceWorker from './registerServiceWorker'
 
 import {
   HashRouter,
+  BrowserRouter as Router,
+  Switch,
   Route
 } from 'react-router-dom'
 
@@ -24,7 +26,7 @@ const store = storeFactory()
 
 const render = () => 
 	ReactDOM.render(
-		  <HashRouter>
+		  <Router>
 		    <div className='main'>
 		        <Route exact path="/" component={Home} />
 		        <Route path="/about" component={About} />
@@ -32,7 +34,7 @@ const render = () =>
 		        <Route path="/products" component={Products} />
 		        <Route path="/contact" component={Contact} />
 		    </div>
-		  </HashRouter>
+		  </Router>
 		,
 		document.getElementById('root')
 	)

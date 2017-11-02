@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import { MainMenu, AboutMenu } from './menus'
 //import './stylesheets/pages.scss'
@@ -16,7 +16,7 @@ const PageTemplate = ({children}) =>
 
 export const Home = () =>
     <PageTemplate>
-        <Slider_2_1 />
+        <Slider />
         <PageWrap />
     </PageTemplate>
 
@@ -437,8 +437,10 @@ export const NextEvent = () =>
         </div>
     </div>
 
-export const Slider_2_1 = () =>
+export class Slider extends Component {
 
+    render() {
+        return (
     <section className="slider_wrap slider_fullscreen slider_engine_revo slider_alias_newlife-church-home-1">
         <div id="rev_slider_2_1_wrapper" className="rev_slider_wrapper fullwidthbanner-container">
             <div id="rev_slider_2_1" className="rev_slider fullwidthabanner tp-overflow-hidden display_none" data-version="5.2.6">
@@ -598,6 +600,10 @@ export const Slider_2_1 = () =>
         </div>
     </section>
 
+       )
+    }
+
+}
 
 export const Whoops404 = ({ location }) =>
     <div className="whoops-404">
@@ -606,6 +612,7 @@ export const Whoops404 = ({ location }) =>
 
 export const Events = () =>
     <PageTemplate>
+        <Slider />
       <section className="events">
           <h1>[Event Calendar]</h1>
       </section>
