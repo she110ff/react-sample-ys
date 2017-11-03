@@ -12,12 +12,12 @@ import {
 } from 'react-router-dom'
 
 import {
-  Home,
-  About,
-  Events,
-  Products,
-  Contact
+  About, Events, Contact
 } from './pages'
+
+import { Home } from './pages/home'
+import { Sermons } from './pages/sermons'
+
 
 window.React = React
 
@@ -29,9 +29,7 @@ const render = () =>
 		  <Router>
 		    <div className='main'>
 		        <Route exact path="/" component={Home} />
-		        <Route path="/about" component={About} />
-		        <Route path="/events" component={Events} />
-		        <Route path="/products" component={Products} />
+		        <Route path="/sermons" component={Sermons} />
 		        <Route path="/contact" component={Contact} />
 		    </div>
 		  </Router>
