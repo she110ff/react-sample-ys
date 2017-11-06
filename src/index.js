@@ -30,7 +30,7 @@ const render = () =>
 		    <div className='main'>
 		        <Route exact path="/" component={Home} />
 		        <Route path="/sermons" component={Sermons} />
-		        <Route path="/contact" component={Contact} />
+		        <Route path="/events" component={Events} />
 		    </div>
 		  </Router>
 		,

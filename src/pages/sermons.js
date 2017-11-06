@@ -1,26 +1,36 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
-import { PageTemplate } from './index'
 
+import { LayoutProvider } from 'react-page-layout'
+import { Page, Section } from 'react-page-layout'
 
+import { layouts } from '../layouts'
 
 
 export const Sermons = () =>
-    <PageTemplate>
-        <Breadcrumbs />
-        <PageWrap />
-    </PageTemplate>
+    <LayoutProvider layouts={layouts}>
+        <SermonsPage />
+    </LayoutProvider>
 
 
-const PageWrap = () =>
-    <div className="page_content_wrap page_paddings_no">
-        <div className="content_wrap">
-            <SermonList />
-        </div>
-        <SideBarWidget />
-    </div>
+class SermonsPage extends Component {
+    render() {
+        return (
+            <Page layout="public">
+                <Section slot="top">
+                    <Breadcrumbs />
+                </Section>
+                <Section slot="main">
+                    <SermonList />
+                    <SideBarWidget />
+                </Section>
+            </Page>
+        );
+    }
+}        
 
-export const Breadcrumbs = () =>
+
+const Breadcrumbs = () =>
     <div className="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
         <div className="top_panel_title_inner top_panel_inner_style_3 breadcrumbs_block_bg4">
             <div className="content_wrap">
@@ -34,7 +44,7 @@ export const Breadcrumbs = () =>
         </div>
     </div>
 
-export const SermonList = () =>
+const SermonList = () =>
     <div  className="content">
         <SermonOdd />
         <SermonEven />

@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
-import { Header, HeaderMobile,PageContentWrap, AboutMenu } from './menus'
-import { Footer, CopyWrap } from './footer'
+
+import { LayoutProvider } from 'react-page-layout'
+import { Page, Section } from 'react-page-layout'
+
+import { layouts } from '../layouts'
 
 export const PageTemplate = ({children}) =>
     <div className="body_wrap">
         <div className="page_wrap">
             <div className="top_panel_fixed_wrap"></div>
-            <Header />
-            <HeaderMobile />
-            <PageContentWrap>
+            
                 {children}
-            </PageContentWrap>
-            <Footer />
-            <CopyWrap />
+           
         </div>
     </div>
 
@@ -24,12 +23,25 @@ export const Whoops404 = ({ location }) =>
         <h1>Resource not found at '{location.pathname}'</h1>
     </div>
 
+
+
 export const Events = () =>
-    <PageTemplate>
-      <section className="events">
-          <h1>[Event Calendar]</h1>
-      </section>
-    </PageTemplate>
+    <LayoutProvider layouts={layouts}>
+      <EventPage />
+    </LayoutProvider>
+
+
+class EventPage extends Component {
+    render() {
+        return (
+            <Page layout="public">
+                <Section slot="main">
+                    <h1> THIS IS THE PAGE CONTENT </h1>
+                </Section>
+            </Page>
+        );
+    }
+}    
 
 export const Products = () =>
     <PageTemplate>
@@ -48,7 +60,7 @@ export const Contact = () =>
 export const About = ({ match }) =>
     <PageTemplate>
         <section className="about">
-            <Route component={AboutMenu} />
+  
             <Route exact path="/about" component={Company}/>
             <Route path="/about/history" component={History}/>
             <Route path="/about/services" component={Services}/>
