@@ -17,7 +17,7 @@ import {
 
 import { Home } from './pages/home'
 import { Sermons } from './pages/sermons'
-import { Gallery } from './pages/gallery'
+import { Galleries } from './pages/gallery'
 
 
 
@@ -32,7 +32,7 @@ const render = () =>
 		    <div className='main'>
 		        <Route exact path="/" component={Home} />
 		        <Route path="/sermons" component={Sermons} />
-		        <Route path="/gallery" component={Gallery} />
+		        <Route path="/gallery" component={Galleries} />
 		    </div>
 		  </Router>
 		,
