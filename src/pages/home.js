@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 
+import RevSlider, { Slide, Caption } from 'react-rev-slider';
+
 import { LayoutProvider } from 'react-page-layout'
 import { Page, Section } from 'react-page-layout'
 
@@ -14,6 +16,7 @@ export const Home = () =>
 
 
 class HomePage extends Component {
+
     render() {
         return (
             <Page layout="home">
@@ -34,6 +37,8 @@ class HomePage extends Component {
         );
     }
 }        
+
+
 
 
 export const CallTo = () =>
@@ -436,7 +441,7 @@ export const NextEvent = () =>
 
 
 
-class Slider extends Component {
+class MMSlider extends Component {
 
     render() {
         return (
@@ -594,12 +599,80 @@ class Slider extends Component {
                                     <img src="http://placehold.it/631x595" alt="" width="631" height="595" data-ww="['631px','631px','631px','401']" data-hh="['595px','595px','595px','359']" data-no-retina /> </div>
                             </li>
                         </ul>
-                        <div className="tp-bannertimer"></div>
+                        <div className="tp-bannertimer" ></div>
                     </div>
                 </div>
             </section>
 
        )
     }
+
+}
+
+
+
+const config = {
+    delay:9000,
+    startwidth:1170,
+    startheight:500,
+    hideThumbs:10,
+    fullWidth:"on",
+    forceFullWidth:"on"
+};
+
+class Slider extends Component {
+
+    render() {
+        return (
+            <RevSlider config={config}>
+                <Slide
+                    src="https://i.ytimg.com/vi/dFnvYtPePRA/maxresdefault.jpg"
+                    alt="slidebg1"
+                    data-bgfit="cover"
+                    data-bgposition="left top"
+                    data-bgrepeat="no-repeat"
+                    slideProperties={{
+                        'data-transition': "fade",
+                        'data-slotamount': "7",
+                        'data-masterspeed': "1500"
+                    }}
+                >   
+                    <Caption
+                        class="tp-caption skewfromrightshort fadeout"
+                        data-x="85"
+                        data-y="224"
+                        data-speed="500"
+                        data-start="1200"
+                        data-easing="Power4.easeOut"
+                    >
+                        This is a caption
+                    </Caption>
+                </Slide>
+                <Slide
+                    src="https://i.ytimg.com/vi/0xe4H666drk/maxresdefault.jpg"
+                    alt="slidebg1"
+                    data-bgfit="cover"
+                    data-bgposition="left top"
+                    data-bgrepeat="no-repeat"
+                    slideProperties={{
+                        'data-transition': "fade",
+                        'data-slotamount': "7",
+                        'data-masterspeed': "1500"
+                    }}
+                >   
+                    <Caption
+                        class="tp-caption skewfromrightshort fadeout"
+                        data-x="85"
+                        data-y="224"
+                        data-speed="500"
+                        data-start="1200"
+                        data-easing="Power4.easeOut"
+                    >
+                        This is a caption
+                    </Caption>
+                </Slide>
+            </RevSlider>
+            )
+        }
 
 }
