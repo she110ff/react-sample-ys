@@ -17,6 +17,8 @@ import {
 
 import { Home } from './pages/home'
 import { Sermons } from './pages/sermons'
+import { Gallery } from './pages/gallery'
+
 
 
 window.React = React
@@ -30,7 +32,7 @@ const render = () =>
 		    <div className='main'>
 		        <Route exact path="/" component={Home} />
 		        <Route path="/sermons" component={Sermons} />
-		        <Route path="/events" component={Events} />
+		        <Route path="/gallery" component={Gallery} />
 		    </div>
 		  </Router>
 		,

@@ -141,21 +141,12 @@ export const Header = () =>
                                     </ul>
                                 </li>
                                 <li className="menu-item menu-item-has-children">
-                                    <a href="#">Gallery</a>
-                                    <ul className="sub-menu">
-                                        <li className="menu-item">
-                                            <a href="gallery-grid.html">Grid Gallery</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="gallery-cobbles.html">Cobbles Gallery</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="gallery-masonry.html">Masonry Gallery</a>
-                                        </li>
-                                    </ul>
+                                    <NavLink to="/gallery">
+                                        Gallery
+                                    </NavLink>
                                 </li>
                                 <li className="menu-item">
-                                    <a href="post-formats.html">Blog</a>
+                                    <a href="post-formats.html">Contacts</a>
                                 </li>
                                 <li className="donate-btn menu-item">
                                     <a href="donate-now.html">Give</a>
