@@ -65,10 +65,37 @@ const PublicLayoutPageContentWrap = ({children}) =>
         </div>
     </div>
 
+class CTypeLayout extends Component {
+    render() {
+        return (
+            <div className="body_wrap">
+                <div className="page_wrap">
+                    <div className="top_panel_fixed_wrap"></div>
+                    <Header />
+                    <HeaderMobile />
+                    <Slot name="top" />
+                    <CTypeLayoutPageContentWrap>
+                        <Slot name="main" />
+                    </CTypeLayoutPageContentWrap>
+                    <Footer />
+                    <CopyWrap />
+                </div>
+            </div>
+
+        );
+    }
+}
+const CTypeLayoutPageContentWrap = ({children}) =>
+    <div className="page_content_wrap page_paddings_yes">
+        <div className="content_wrap">
+             {children}
+        </div>
+    </div>
 
 
 
 export const layouts = {
     'home': HomeLayout,
     'public': PublicLayout,
+    'ctype': CTypeLayout,
 };

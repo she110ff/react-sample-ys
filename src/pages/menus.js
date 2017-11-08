@@ -72,85 +72,33 @@ export const Header = () =>
                     <div className="menu_main_wrap">
                         <nav className="menu_main_nav_area">
                             <ul id="menu_main" className="menu_main_nav">
-                                <li className="menu-item menu-item-has-children">
+                                <li className="menu-item">
                                     <NavLink to="/">
                                         Home
                                     </NavLink>
                                 </li>
-                                <li className="menu-item menu-item-has-children">
-                                    <a href="#">Pages</a>
-                                    <ul className="sub-menu">
-                                        <li className="menu-item">
-                                            <a href="about-us.html">About Us</a>
-                                        </li>
-                                        <li className="menu-item menu-item-has-children">
-                                            <a href="#">Tools</a>
-                                            <ul className="sub-menu">
-                                                <li className="menu-item">
-                                                    <a href="support.html">Support</a>
-                                                </li>
-                                                <li className="menu-item">
-                                                    <a href="customization.html">Customization</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="menu-item menu-item-has-children">
-                                            <a href="#">Features</a>
-                                            <ul className="sub-menu">
-                                                <li className="menu-item">
-                                                    <a href="typography.html">Typography</a>
-                                                </li>
-                                                <li className="menu-item">
-                                                    <a href="shortcodes.html">Shortcodes</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="page-404.html">404 Page</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="events-calendar.html">Events Calendar</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="shop.html">Shop</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="contacts.html">Contacts</a>
-                                        </li>
-                                    </ul>
-                                </li>
+
                                 <li className="menu-item">
                                     <NavLink to="/events">
                                         Events
                                     </NavLink>
                                 </li>
-                                <li className="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+                                <li className="menu-item">
                                     <NavLink to="/sermons">
                                         Sermons
                                     </NavLink>
-                                    <ul className="sub-menu">
-                                        <li className="menu-item current-menu-item">
-                                            <a href="sermons.html">All Sermons</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="sermons-boxed.html">Sermons Boxed</a>
-                                        </li>
-                                        <li className="menu-item">
-                                            <a href="sermons-fullscreen.html">Sermons Fullscreen</a>
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li className="menu-item menu-item-has-children">
+                                <li className="menu-item">
                                     <NavLink to="/gallery">
                                         Gallery
                                     </NavLink>
                                 </li>
                                 <li className="menu-item">
-                                    <a href="post-formats.html">Contacts</a>
+                                    <NavLink to="/contacts">
+                                        Contacts
+                                    </NavLink>
                                 </li>
-                                <li className="donate-btn menu-item">
-                                    <a href="donate-now.html">Give</a>
-                                </li>
+
                             </ul>
                         </nav>
                     </div>
