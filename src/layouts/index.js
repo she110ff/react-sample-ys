@@ -94,6 +94,8 @@ const CTypeLayoutPageContentWrap = ({children}) =>
 
 
 
+
+
 export const layouts = {
     'home': HomeLayout,
     'public': PublicLayout,
