@@ -4,6 +4,9 @@ import { Link, Route } from 'react-router-dom'
 import { LayoutProvider } from 'react-page-layout'
 import { Page, Section } from 'react-page-layout'
 
+import { compose, withProps } from "recompose"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import  { MarkerWithLabel } from "react-google-maps/lib/components/addons/MarkerWithLabel"
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
 
@@ -21,7 +24,12 @@ class ContactPage extends Component {
         return (
             <Page layout="home">
                 <Section slot="main">
-                    <GoogleMap />
+                    <MapWithAMarker
+                      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCX3DlnEZmkiPSj686cJj-vc5lX9lq6BQ&v=3.exp&libraries=geometry,drawing,places"
+                      loadingElement={<div style={{ height: `100%` }} />}
+                      containerElement={<div style={{ height: `400px` }} />}
+                      mapElement={<div style={{ height: `100%` }} />}
+                    />       
                     <ContactForm />
                 </Section>
             </Page>
@@ -29,13 +37,16 @@ class ContactPage extends Component {
     }
 }        
 
-
-const GoogleMap = () =>
-    <div id="sc_googlemap_1167161672" className="sc_googlemap"  data-zoom="14" data-style="style2">
-        <div id="sc_googlemap_1167161672_1" className="sc_googlemap_marker" data-title="" data-description="" data-address="Bronx Stadium Avenue" data-latlng="" data-point="images/marker.png"></div>
-    </div>
-
-
+const MapWithAMarker = withScriptjs(withGoogleMap(props =>
+  <GoogleMap
+    defaultZoom={15}
+    defaultCenter={{ lat: 37.636586, lng: 126.631072 }}
+  >
+    <Marker
+      position={{ lat: 37.636586, lng: 126.631072 }}
+    />
+  </GoogleMap>
+));
 
 class ContactForm extends Component{
     render() {

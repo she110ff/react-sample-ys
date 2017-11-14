@@ -626,7 +626,7 @@ class Slider extends Component {
         return (
             <RevSlider config={config}>
                 <Slide
-                    src="https://i.ytimg.com/vi/dFnvYtPePRA/maxresdefault.jpg"
+                    src="http://placehold.it/1920x768"
                     alt="slidebg1"
                     data-bgfit="cover"
                     data-bgposition="left top"
@@ -649,7 +649,7 @@ class Slider extends Component {
                     </Caption>
                 </Slide>
                 <Slide
-                    src="https://i.ytimg.com/vi/0xe4H666drk/maxresdefault.jpg"
+                    src="http://placehold.it/1280x720"
                     alt="slidebg1"
                     data-bgfit="cover"
                     data-bgposition="left top"
