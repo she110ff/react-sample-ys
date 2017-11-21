@@ -613,13 +613,14 @@ class MMSlider extends Component {
 
 const config = {
     delay:9000,
-    startwidth:1170,
-    startheight:500,
+    startwidth:1920,
+    startheight:768,
     hideThumbs:10,
     fullWidth:"on",
     forceFullWidth:"on"
 };
 
+ 
 class Slider extends Component {
 
     render() {
@@ -629,23 +630,40 @@ class Slider extends Component {
                     src="http://placehold.it/1920x768"
                     alt="slidebg1"
                     data-bgfit="cover"
-                    data-bgposition="left top"
+                    data-bgposition="center center"
                     data-bgrepeat="no-repeat"
                     slideProperties={{
-                        'data-transition': "fade",
+                        'data-transition': "random",
                         'data-slotamount': "7",
-                        'data-masterspeed': "1500"
+                        'data-masterspeed': "500",
+                        'data-hideafterloop': "0",
+                        'data-hideslideonmobile': "off",
+                        'data-rotate': "0",
+                        'data-saveperformance': "off",
+                        'data-easein': "default",
+                        'data-easeout': "default"
                     }}
                 >   
                     <Caption
-                        class="tp-caption skewfromrightshort fadeout"
-                        data-x="85"
-                        data-y="224"
-                        data-speed="500"
-                        data-start="1200"
-                        data-easing="Power4.easeOut"
+                        class="tp-caption tp-resizeme slide_large_text" 
+                        data-x="['center','center','center','center']" 
+                        data-hoffset="['3','0','4','0']" 
+                        data-y="['top','top','top','top']" 
+                        data-voffset="['228','228','261','68']" 
+                        data-fontsize="['75','75','60','50']" 
+                        data-lineheight="['80','80','70','55']" 
+                        data-width="['none','none','693','443']" 
+                        data-height="['none','none','161','none']" 
+                        data-whitespace="['nowrap','nowrap','normal','normal']" 
+                        data-transform_idle="o:1;" 
+                        data-transform_in="y:-50px;opacity:0;s:800;e:Power3.easeInOut;" 
+                        data-transform_out="opacity:0;s:300;" 
+                        data-start="1350" 
+                        data-splitin="none" 
+                        data-splitout="none" 
+                        data-responsive_offset="on"
                     >
-                        This is a caption
+                        Welcome
                     </Caption>
                 </Slide>
                 <Slide
