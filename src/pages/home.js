@@ -626,7 +626,7 @@ class Slider extends Component {
     render() {
         return (
             <RevSlider config={config}>
-                <Slide
+                 <Slide
                     src="http://placehold.it/1920x768"
                     alt="slidebg1"
                     data-bgfit="cover"
@@ -645,49 +645,43 @@ class Slider extends Component {
                     }}
                 >   
                     <Caption
-                        class="tp-caption tp-resizeme slide_large_text" 
+                        class="tp-caption tp-resizeme skewfromrightshort fadeout" 
+                        id="slide-6-layer-1"
                         data-x="['center','center','center','center']" 
                         data-hoffset="['3','0','4','0']" 
                         data-y="['top','top','top','top']" 
                         data-voffset="['228','228','261','68']" 
                         data-fontsize="['75','75','60','50']" 
                         data-lineheight="['80','80','70','55']" 
-                        data-width="['none','none','693','443']" 
-                        data-height="['none','none','161','none']" 
-                        data-whitespace="['nowrap','nowrap','normal','normal']" 
+                        data-width="none" 
+                        data-height="none" 
+                        data-whitespace="nowarp" 
                         data-transform_idle="o:1;" 
-                        data-transform_in="y:-50px;opacity:0;s:800;e:Power3.easeInOut;" 
+                        data-transform_in="x:{-250,250};y:{-150,150};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:1200;e:Power2.easeInOut;" 
                         data-transform_out="opacity:0;s:300;" 
-                        data-start="1350" 
+                        data-start="500" 
                         data-splitin="none" 
                         data-splitout="none" 
                         data-responsive_offset="on"
+                        data-easing="Power4.easeOut"
                     >
                         Welcome
+
                     </Caption>
                 </Slide>
+              
                 <Slide
-                    src="http://placehold.it/1280x720"
+                    src="http://placehold.it/1920x768"
                     alt="slidebg1"
                     data-bgfit="cover"
                     data-bgposition="left top"
                     data-bgrepeat="no-repeat"
                     slideProperties={{
-                        'data-transition': "fade",
+                        'data-transition': "random",
                         'data-slotamount': "7",
                         'data-masterspeed': "1500"
                     }}
                 >   
-                    <Caption
-                        class="tp-caption skewfromrightshort fadeout"
-                        data-x="85"
-                        data-y="224"
-                        data-speed="500"
-                        data-start="1200"
-                        data-easing="Power4.easeOut"
-                    >
-                        This is a caption
-                    </Caption>
                 </Slide>
             </RevSlider>
             )
