@@ -124,66 +124,19 @@ export const HeaderMobile = () =>
                     <nav className="menu_main_nav_area">
                         <ul id="menu_main_mobile" className="menu_main_nav">
                             <li className="menu-item menu-item-has-children">
-                                <a href="#">Home</a>
-                                <ul className="sub-menu">
-                                    <li className="menu-item">
-                                        <a href="index.html">Home 1</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="homepage-2.html">Home 2</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="homepage-3.html">Home 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item menu-item-has-children">
-                                <a href="#">Pages</a>
-                                <ul className="sub-menu">
-                                    <li className="menu-item">
-                                        <a href="about-us.html">About Us</a>
-                                    </li>
-                                    <li className="menu-item menu-item-has-children">
-                                        <a href="#">Tools</a>
-                                        <ul className="sub-menu">
-                                            <li className="menu-item">
-                                                <a href="support.html">Support</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a href="customization.html">Customization</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="menu-item menu-item-has-children">
-                                        <a href="#">Features</a>
-                                        <ul className="sub-menu">
-                                            <li className="menu-item">
-                                                <a href="typography.html">Typography</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a href="shortcodes.html">Shortcodes</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="page-404.html">404 Page</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="events-calendar.html">Events Calendar</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="shop.html">Shop</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="contacts.html">Contacts</a>
-                                    </li>
-                                </ul>
+                                <NavLink to="/">
+                                    Home
+                                </NavLink>
                             </li>
                             <li className="menu-item">
-                                <a href="events.html">Events</a>
+                                <NavLink to="/events">
+                                    Events
+                                </NavLink>
                             </li>
-                            <li className="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
-                                <a href="#">Sermons</a>
+                            <li className="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">                                
+                                <NavLink to="/sermons">
+                                    Sermons
+                                </NavLink>
                                 <ul className="sub-menu">
                                     <li className="menu-item current-menu-item">
                                         <a href="sermons.html">All Sermons</a>
@@ -196,25 +149,15 @@ export const HeaderMobile = () =>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="menu-item menu-item-has-children">
-                                <a href="#">Gallery</a>
-                                <ul className="sub-menu">
-                                    <li className="menu-item">
-                                        <a href="gallery-grid.html">Grid Gallery</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="gallery-cobbles.html">Cobbles Gallery</a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="gallery-masonry.html">Masonry Gallery</a>
-                                    </li>
-                                </ul>
+                            <li className="menu-item">
+                                <NavLink to="/gallery">
+                                    Gallery
+                                </NavLink>
                             </li>
                             <li className="menu-item">
-                                <a href="post-formats.html">Blog</a>
-                            </li>
-                            <li className="donate-btn menu-item">
-                                <a href="donate-now.html">Give</a>
+                                <NavLink to="/contacts">
+                                    Contacts
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>
