@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Link, Route } from 'react-router-dom'
 
-import { LayoutProvider } from 'react-page-layout'
-import { Page, Section } from 'react-page-layout'
+import { LayoutProvider, Page, Section } from '../libs/layout'
 
 import Lightbox from 'react-images'
 
@@ -52,44 +51,44 @@ const Breadcrumbs = () =>
 
 
 const Gallery = () =>
-        <div class="content">
-            <article class="post_item post_item_single page">
-                <section class="post_content tpl_gallery_section">
-                    <article class="myportfolio-container gallery" >
-                        <div  class="esg-grid">
-                            <article class="esg-filters esg-singlefilters grid-filters margin_bottom_20">
-                                <div class="esg-filter-wrapper esg-fgc-3 margin_left_3 margin_right_3">
-                                    <div class="esg-filterbutton selected esg-allfilter" >
+        <div className="content">
+            <article className="post_item post_item_single page">
+                <section className="post_content tpl_gallery_section">
+                    <article className="myportfolio-container gallery" >
+                        <div  className="esg-grid">
+                            <article className="esg-filters esg-singlefilters grid-filters margin_bottom_20">
+                                <div className="esg-filter-wrapper esg-fgc-3 margin_left_3 margin_right_3">
+                                    <div className="esg-filterbutton selected esg-allfilter" >
                                         <span>All</span>
                                     </div>
-                                    <div class="esg-filterbutton" data-fid="123" data-filter="filter-conferences">
+                                    <div className="esg-filterbutton" data-fid="123" data-filter="filter-conferences">
                                         <span>conferences</span>
-                                        <span class="esg-filter-checked">
-                                            <i class="eg-icon-ok-1"></i>
+                                        <span className="esg-filter-checked">
+                                            <i className="eg-icon-ok-1"></i>
                                         </span>
                                     </div>
-                                    <div class="esg-filterbutton" data-fid="121" data-filter="filter-events">
+                                    <div className="esg-filterbutton" data-fid="121" data-filter="filter-events">
                                         <span>events</span>
-                                        <span class="esg-filter-checked">
-                                            <i class="eg-icon-ok-1"></i>
+                                        <span className="esg-filter-checked">
+                                            <i className="eg-icon-ok-1"></i>
                                         </span>
                                     </div>
-                                    <div class="esg-filterbutton" data-fid="124" data-filter="filter-sermons">
+                                    <div className="esg-filterbutton" data-fid="124" data-filter="filter-sermons">
                                         <span>sermons</span>
-                                        <span class="esg-filter-checked">
-                                            <i class="eg-icon-ok-1"></i>
+                                        <span className="esg-filter-checked">
+                                            <i className="eg-icon-ok-1"></i>
                                         </span>
                                     </div>
-                                    <div class="esg-filterbutton" data-fid="122" data-filter="filter-worship">
+                                    <div className="esg-filterbutton" data-fid="122" data-filter="filter-worship">
                                         <span>worship</span>
-                                        <span class="esg-filter-checked">
-                                            <i class="eg-icon-ok-1"></i>
+                                        <span className="esg-filter-checked">
+                                            <i className="eg-icon-ok-1"></i>
                                         </span>
                                     </div>
-                                    <div class="eg-clearfix"></div>
+                                    <div className="eg-clearfix"></div>
                                 </div>
                             </article>
-                            <div class="esg-clear-no-height"></div>
+                            <div className="esg-clear-no-height"></div>
 
                             <WaterfallSampleComponent />
                     </div>
@@ -142,11 +141,13 @@ class WaterfallSampleComponent extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', () => {
-      this.setState({
-        containerWidth: ReactDOM.findDOMNode(this.refs.container).clientWidth
-      });
-    }, false);
+    window.newlife_church_init_actions();
+    console.log("gallery > componentDidMount ")
+
+  }
+
+  componentWillUnmount(){
+    console.log("componentWillUnmount");
   }
 
   clickItemHandle(e) {
@@ -173,6 +174,7 @@ class WaterfallSampleComponent extends Component {
   }
 
   render() {
+    console.log("gallery > render ")
     return (
       <AutoResponsive ref="container" {...this.getAutoResponsiveProps()}>
         {

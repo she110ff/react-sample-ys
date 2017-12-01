@@ -3,8 +3,7 @@ import { Link, Route } from 'react-router-dom'
 
 import RevSlider, { Slide, Caption } from 'react-rev-slider';
 
-import { LayoutProvider } from 'react-page-layout'
-import { Page, Section } from 'react-page-layout'
+import { LayoutProvider, Page, Section } from '../libs/layout'
 
 import { layouts } from '../layouts'
 

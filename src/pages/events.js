@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 
-import { LayoutProvider } from 'react-page-layout'
-import { Page, Section } from 'react-page-layout'
+import { LayoutProvider, Page, Section } from '../libs/layout'
 
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'

@@ -145,14 +145,17 @@ function newlife_church_ready_actions() {
 		newlife_church_show_current_menu_item(jQuery('.menu_side_responsive'), jQuery('.sidebar_outer_menu_responsive_button'));
 	}
 	if (jQuery('.header_mobile').length > 0) {
+		console.log("header_mobile.length :", jQuery('.header_mobile').length);
 		jQuery('.header_mobile .menu_main_nav_area ul#menu_main').removeAttr('id');
 		jQuery('.header_mobile .menu_button').on('click', function(){
+			console.log('menu clicked!')
 			jQuery('.header_mobile .side_wrap').toggleClass('open');
 			jQuery('.header_mobile .mask').toggleClass('show');
 			jQuery('html').toggleClass('menu_mobile_open');
 		});
 		
 		jQuery('.header_mobile .mask, .header_mobile .side_wrap .close').on('click', function(){
+			console.log('mask clicked!')
 			jQuery('.header_mobile .side_wrap').removeClass('open');
 			jQuery('.header_mobile .mask').removeClass('show');
 			jQuery('html').removeClass('menu_mobile_open');

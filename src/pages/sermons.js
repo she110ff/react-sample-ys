@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 
-import { LayoutProvider } from 'react-page-layout'
-import { Page, Section } from 'react-page-layout'
+import { LayoutProvider, Page, Section } from '../libs/layout'
 
 import { layouts } from '../layouts'
 
@@ -14,6 +13,15 @@ export const Sermons = () =>
 
 
 class SermonsPage extends Component {
+
+
+  componentDidMount() {
+    window.newlife_church_init_actions();
+    console.log("SermonsPage > componentDidMount ")
+
+  }
+
+    
     render() {
         return (
             <Page layout="public">
@@ -31,7 +39,6 @@ class SermonsPage extends Component {
 
 
 const Breadcrumbs = () =>
-    <div className="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
         <div className="top_panel_title_inner top_panel_inner_style_3 breadcrumbs_block_bg4">
             <div className="content_wrap">
                 <h1 className="page_title">All sermons</h1>
@@ -42,10 +49,9 @@ const Breadcrumbs = () =>
                 </div>
             </div>
         </div>
-    </div>
 
 const SermonList = () =>
-    <div  className="content">
+    <div  className="content  sidebar_show sidebar_right ">
         <SermonOdd />
         <SermonEven />
         <nav id="pagination" className="pagination_wrap pagination_pages">
@@ -280,7 +286,7 @@ export const SideBarWidget = () =>
                     <th className="month_prev">
                         <a href="#" title="View posts for December 2016"></a>
                     </th>
-                    <th className="month_cur" colspan="5">January
+                    <th className="month_cur" colSpan="5">January
                         <span>2017</span>
                     </th>
                     <th className="month_next">
@@ -299,7 +305,7 @@ export const SideBarWidget = () =>
                 </thead>
                 <tbody>
                 <tr>
-                    <td colspan="6" className="pad">
+                    <td colSpan="6" className="pad">
                         <span className="day_wrap">&nbsp;</span>
                     </td>
                     <td className="day">
@@ -405,7 +411,7 @@ export const SideBarWidget = () =>
                     <td className="day">
                         <span className="day_wrap">31</span>
                     </td>
-                    <td className="pad" colspan="5">
+                    <td className="pad" colSpan="5">
                         <span className="day_wrap">&nbsp;</span>
                     </td>
                 </tr>
